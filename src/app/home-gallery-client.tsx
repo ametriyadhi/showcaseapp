@@ -30,6 +30,7 @@ type ShowcaseApp = {
   slug: string;
   cardBg: string;
   category: string | null;
+  defaultDevice: string;
   media: MediaItem[];
 };
 
