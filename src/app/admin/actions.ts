@@ -76,6 +76,7 @@ export async function uploadMedia(appId: string, formData: FormData) {
 
   revalidatePath(`/admin/app/${appId}`);
   revalidatePath(`/app`);
+  revalidatePath(`/`);
 }
 
 export async function deleteMedia(mediaId: string, appId: string) {
@@ -84,6 +85,7 @@ export async function deleteMedia(mediaId: string, appId: string) {
   });
   revalidatePath(`/admin/app/${appId}`);
   revalidatePath(`/app`);
+  revalidatePath(`/`);
 }
 
 export async function updateShowcaseApp(appId: string, formData: FormData) {
@@ -105,6 +107,7 @@ export async function updateShowcaseApp(appId: string, formData: FormData) {
   revalidatePath("/admin");
   revalidatePath(`/admin/app/${appId}`);
   revalidatePath(`/app/${slug}`);
+  revalidatePath(`/`);
 }
 
 export async function deleteShowcaseApp(appId: string) {
