@@ -1,0 +1,151 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "windows", "debian-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ==========================================
+// APPHUB ORIGINAL TABLES (Do not remove)
+// ==========================================
+
+model User {
+  id           String        @id @default(uuid())
+  name         String
+  email        String        @unique
+  passwordHash String?
+  role         String        @default("USER")
+  department   String?
+  isActive     Boolean       @default(true)
+  favorites    UserFavorite[]
+  clickLogs    AppClickLog[]
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+}
+
+model Category {
+  id           String        @id @default(uuid())
+  name         String
+  slug         String        @unique
+  icon         String?
+  sortOrder    Int           @default(0)
+  isActive     Boolean       @default(true)
+  applications Application[]
+  createdAt    DateTime      @default(now())
+}
+
+model Application {
+  id            String            @id @default(uuid())
+  name          String
+  description   String?
+  url           String
+  iconUrl       String?
+  iconName      String?
+  color         String?
+  categoryId    String?
+  category      Category?         @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  isActive      Boolean           @default(true)
+  openInNewTab  Boolean           @default(true)
+  sortOrder     Int               @default(0)
+  favorites     UserFavorite[]
+  clickLogs     AppClickLog[]
+  appRoles      ApplicationRole[]
+  createdAt     DateTime          @default(now())
+  updatedAt     DateTime          @updatedAt
+}
+
+model Role {
+  id          String            @id @default(uuid())
+  name        String            @unique
+  description String?
+  appRoles    ApplicationRole[]
+  createdAt   DateTime          @default(now())
+}
+
+model ApplicationRole {
+  id            String      @id @default(uuid())
+  applicationId String
+  roleId        String
+  application   Application @relation(fields: [applicationId], references: [id], onDelete: Cascade)
+  role          Role        @relation(fields: [roleId], references: [id], onDelete: Cascade)
+
+  @@unique([applicationId, roleId])
+}
+
+model UserFavorite {
+  id            String      @id @default(uuid())
+  userId        String
+  applicationId String
+  user          User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  application   Application @relation(fields: [applicationId], references: [id], onDelete: Cascade)
+  createdAt     DateTime    @default(now())
+
+  @@unique([userId, applicationId])
+}
+
+model AppClickLog {
+  id            String       @id @default(uuid())
+  userId        String?
+  applicationId String?
+  user          User?        @relation(fields: [userId], references: [id])
+  application   Application? @relation(fields: [applicationId], references: [id])
+  ipAddress     String?
+  userAgent     String?
+  clickedAt     DateTime     @default(now())
+}
+
+model SystemSetting {
+  id    String @id @default(uuid())
+  key   String @unique
+  value String
+}
+
+// ==========================================
+// NEW SHOWCASE TABLES
+// ==========================================
+
+model ShowcaseApp {
+  id            String   @id @default(cuid())
+  name          String
+  slug          String   @unique
+  description   String?
+  tagline       String?
+  category      String?
+  appUrl        String?
+  defaultDevice String   @default("phone")
+  cardBg        String   @default("gradient-blue")
+  isPublished   Boolean  @default(false)
+  sortOrder     Int      @default(0)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  
+  media         ShowcaseMedia[]
+  features      ShowcaseFeature[]
+}
+
+model ShowcaseMedia {
+  id        String   @id @default(cuid())
+  appId     String
+  type      String   // screenshot | video | youtube
+  url       String   // File URL or YouTube embed URL
+  thumbnail String?  // For video: poster image
+  caption   String?
+  mockup    String   @default("phone")
+  order     Int      @default(0)
+  
+  app       ShowcaseApp @relation(fields: [appId], references: [id], onDelete: Cascade)
+}
+
+model ShowcaseFeature {
+  id      String @id @default(cuid())
+  appId   String
+  icon    String
+  title   String
+  desc    String?
+  order   Int    @default(0)
+  
+  app     ShowcaseApp @relation(fields: [appId], references: [id], onDelete: Cascade)
+}
