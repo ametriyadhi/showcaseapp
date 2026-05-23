@@ -1,0 +1,1032 @@
+{
+  "users": [
+    {
+      "id": "9ac0cba9-7a32-4ee9-a619-751ea89e5848",
+      "name": "Admin AppHub",
+      "email": "admin@apphub.local",
+      "passwordHash": "$2a$10$fwVutjnAoDNv2tqWYcTwd.irqMpN62Rb3acjvxZ.70ZStOHsAJXcm",
+      "role": "ADMIN",
+      "department": null,
+      "isActive": true,
+      "createdAt": "2026-05-20T05:22:08.217Z",
+      "updatedAt": "2026-05-20T05:22:08.217Z"
+    },
+    {
+      "id": "9a092637-37c4-4ac6-aead-db988725d690",
+      "name": "User Demo",
+      "email": "user@apphub.local",
+      "passwordHash": "$2a$10$Gpl5oTS6wy91C1cE.506ZecnPNkGhKkW6YEdtUB545qfhupIHVWWe",
+      "role": "USER",
+      "department": null,
+      "isActive": true,
+      "createdAt": "2026-05-20T05:22:08.303Z",
+      "updatedAt": "2026-05-20T05:22:08.303Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "77a174c2-71c4-44ea-b6c4-2b01b582b2e7",
+      "name": "HR",
+      "slug": "hr",
+      "icon": null,
+      "sortOrder": 0,
+      "isActive": true,
+      "createdAt": "2026-05-20T05:22:08.451Z"
+    },
+    {
+      "id": "19775701-4fa2-41e5-a738-1592df94da90",
+      "name": "Finance",
+      "slug": "finance",
+      "icon": null,
+      "sortOrder": 0,
+      "isActive": true,
+      "createdAt": "2026-05-20T05:22:08.461Z"
+    },
+    {
+      "id": "c3562e58-c3ec-471a-af8c-5a8bb82edaef",
+      "name": "IT",
+      "slug": "it",
+      "icon": null,
+      "sortOrder": 0,
+      "isActive": true,
+      "createdAt": "2026-05-20T05:22:08.485Z"
+    },
+    {
+      "id": "d94e3b53-5200-47d0-bac6-17b42e03dbda",
+      "name": "Operation",
+      "slug": "operation",
+      "icon": null,
+      "sortOrder": 0,
+      "isActive": true,
+      "createdAt": "2026-05-20T05:22:08.515Z"
+    },
+    {
+      "id": "76522288-5e62-4340-ac10-792c99f536c6",
+      "name": "Reporting",
+      "slug": "reporting",
+      "icon": null,
+      "sortOrder": 0,
+      "isActive": true,
+      "createdAt": "2026-05-20T05:22:08.536Z"
+    }
+  ],
+  "applications": [
+    {
+      "id": "b6c7a24b-054c-42bd-a79c-6170d87ef5ff",
+      "name": "HRIS",
+      "description": "Absensi, cuti, dan data karyawan",
+      "url": "https://hris.company.local",
+      "iconUrl": null,
+      "iconName": "Users",
+      "color": "bg-blue-600",
+      "categoryId": "77a174c2-71c4-44ea-b6c4-2b01b582b2e7",
+      "isActive": true,
+      "openInNewTab": true,
+      "sortOrder": 0,
+      "createdAt": "2026-05-20T05:22:08.545Z",
+      "updatedAt": "2026-05-20T05:22:08.545Z"
+    },
+    {
+      "id": "19bab8e5-e004-4fd1-87cb-a1adcdc6516f",
+      "name": "Finance Portal",
+      "description": "Reimbursement dan approval finance",
+      "url": "https://finance.company.local",
+      "iconUrl": null,
+      "iconName": "WalletCards",
+      "color": "bg-emerald-600",
+      "categoryId": "19775701-4fa2-41e5-a738-1592df94da90",
+      "isActive": true,
+      "openInNewTab": true,
+      "sortOrder": 0,
+      "createdAt": "2026-05-20T05:22:08.593Z",
+      "updatedAt": "2026-05-20T05:22:08.593Z"
+    },
+    {
+      "id": "9fbc4ebf-e9ae-4c67-ae84-f08263fb506c",
+      "name": "IT Helpdesk",
+      "description": "Ticketing bantuan IT dan request akses",
+      "url": "https://helpdesk.company.local",
+      "iconUrl": null,
+      "iconName": "LifeBuoy",
+      "color": "bg-orange-500",
+      "categoryId": "c3562e58-c3ec-471a-af8c-5a8bb82edaef",
+      "isActive": true,
+      "openInNewTab": true,
+      "sortOrder": 0,
+      "createdAt": "2026-05-20T05:22:08.601Z",
+      "updatedAt": "2026-05-20T05:22:08.601Z"
+    },
+    {
+      "id": "7b4ddbff-a201-448c-bbf2-f2ba5e22c3ce",
+      "name": "Power BI Report",
+      "description": "Dashboard performa dan reporting",
+      "url": "https://powerbi.microsoft.com",
+      "iconUrl": null,
+      "iconName": "BarChart3",
+      "color": "bg-yellow-500",
+      "categoryId": "76522288-5e62-4340-ac10-792c99f536c6",
+      "isActive": true,
+      "openInNewTab": true,
+      "sortOrder": 0,
+      "createdAt": "2026-05-20T05:22:08.613Z",
+      "updatedAt": "2026-05-20T05:22:08.613Z"
+    },
+    {
+      "id": "c50d783d-9cb4-4a2d-b002-b5a3c9916c8a",
+      "name": "Document Center",
+      "description": "Repository dokumen dan template kerja",
+      "url": "https://docs.company.local",
+      "iconUrl": null,
+      "iconName": "FolderOpen",
+      "color": "bg-violet-600",
+      "categoryId": "d94e3b53-5200-47d0-bac6-17b42e03dbda",
+      "isActive": true,
+      "openInNewTab": true,
+      "sortOrder": 0,
+      "createdAt": "2026-05-20T05:22:08.628Z",
+      "updatedAt": "2026-05-20T05:22:08.628Z"
+    },
+    {
+      "id": "e0caf87f-33f6-4ea0-9cd2-1f86ce30e0c3",
+      "name": "Approval System",
+      "description": "Persetujuan dokumen, PR, dan workflow",
+      "url": "https://approval.company.local",
+      "iconUrl": null,
+      "iconName": "BadgeCheck",
+      "color": "bg-rose-600",
+      "categoryId": "d94e3b53-5200-47d0-bac6-17b42e03dbda",
+      "isActive": true,
+      "openInNewTab": true,
+      "sortOrder": 0,
+      "createdAt": "2026-05-20T05:22:08.637Z",
+      "updatedAt": "2026-05-20T05:22:08.637Z"
+    }
+  ],
+  "roles": [
+    {
+      "id": "f19ae04b-1c18-4985-8119-80e8ab033640",
+      "name": "ADMIN",
+      "description": "Administrator",
+      "createdAt": "2026-05-20T05:22:08.312Z"
+    },
+    {
+      "id": "3d0974b1-17de-49a8-8d3d-fa41d5ee3c53",
+      "name": "USER",
+      "description": "Regular user",
+      "createdAt": "2026-05-20T05:22:08.409Z"
+    }
+  ],
+  "applicationRoles": [
+    {
+      "id": "b94783ae-e138-4db3-bae4-366b3f5c719c",
+      "applicationId": "b6c7a24b-054c-42bd-a79c-6170d87ef5ff",
+      "roleId": "f19ae04b-1c18-4985-8119-80e8ab033640"
+    },
+    {
+      "id": "17a27904-b4e2-4948-8b62-1a7ca1b6ce08",
+      "applicationId": "b6c7a24b-054c-42bd-a79c-6170d87ef5ff",
+      "roleId": "3d0974b1-17de-49a8-8d3d-fa41d5ee3c53"
+    },
+    {
+      "id": "dc85123e-fcf3-4134-b9fb-2a3649cc40ea",
+      "applicationId": "19bab8e5-e004-4fd1-87cb-a1adcdc6516f",
+      "roleId": "f19ae04b-1c18-4985-8119-80e8ab033640"
+    },
+    {
+      "id": "f19fe898-bdb6-4f5d-b18a-efa2d507d5e4",
+      "applicationId": "19bab8e5-e004-4fd1-87cb-a1adcdc6516f",
+      "roleId": "3d0974b1-17de-49a8-8d3d-fa41d5ee3c53"
+    },
+    {
+      "id": "ad7dc91f-ad4b-4a25-a91e-bfe28caee4b7",
+      "applicationId": "9fbc4ebf-e9ae-4c67-ae84-f08263fb506c",
+      "roleId": "f19ae04b-1c18-4985-8119-80e8ab033640"
+    },
+    {
+      "id": "66363401-c3b3-4dca-8c24-38ca0d124bd0",
+      "applicationId": "9fbc4ebf-e9ae-4c67-ae84-f08263fb506c",
+      "roleId": "3d0974b1-17de-49a8-8d3d-fa41d5ee3c53"
+    },
+    {
+      "id": "a573fa5a-0e29-48d8-8c93-4e5371b6447b",
+      "applicationId": "7b4ddbff-a201-448c-bbf2-f2ba5e22c3ce",
+      "roleId": "f19ae04b-1c18-4985-8119-80e8ab033640"
+    },
+    {
+      "id": "8e55aaf2-c2bb-4105-8dd2-95fe023a00bb",
+      "applicationId": "7b4ddbff-a201-448c-bbf2-f2ba5e22c3ce",
+      "roleId": "3d0974b1-17de-49a8-8d3d-fa41d5ee3c53"
+    },
+    {
+      "id": "0f740649-401a-46ed-93bc-d4ebd72f29d3",
+      "applicationId": "c50d783d-9cb4-4a2d-b002-b5a3c9916c8a",
+      "roleId": "f19ae04b-1c18-4985-8119-80e8ab033640"
+    },
+    {
+      "id": "ed6dc574-7d5c-48ec-89f6-51af08b6901f",
+      "applicationId": "c50d783d-9cb4-4a2d-b002-b5a3c9916c8a",
+      "roleId": "3d0974b1-17de-49a8-8d3d-fa41d5ee3c53"
+    },
+    {
+      "id": "84e0772f-1b19-4674-a399-dbed47269bf7",
+      "applicationId": "e0caf87f-33f6-4ea0-9cd2-1f86ce30e0c3",
+      "roleId": "f19ae04b-1c18-4985-8119-80e8ab033640"
+    },
+    {
+      "id": "a2812d3f-157b-4ef7-990d-fe72cf5222a3",
+      "applicationId": "e0caf87f-33f6-4ea0-9cd2-1f86ce30e0c3",
+      "roleId": "3d0974b1-17de-49a8-8d3d-fa41d5ee3c53"
+    }
+  ],
+  "userFavorites": [],
+  "appClickLogs": [
+    {
+      "id": "e6b6378a-f92b-4c96-9e06-633909ecbf18",
+      "userId": "9a092637-37c4-4ac6-aead-db988725d690",
+      "applicationId": "7b4ddbff-a201-448c-bbf2-f2ba5e22c3ce",
+      "ipAddress": null,
+      "userAgent": null,
+      "clickedAt": "2026-05-20T05:33:06.541Z"
+    }
+  ],
+  "systemSettings": [
+    {
+      "id": "4a015b3d-a85d-4be6-b186-93bb9828d721",
+      "key": "appLogo",
+      "value": "/branding/branding-logo-1779257873109.png"
+    },
+    {
+      "id": "6e2dbaaa-394f-44dd-8592-ece2d1ea7d61",
+      "key": "appName",
+      "value": "AppHub"
+    },
+    {
+      "id": "b7115979-72db-4367-ac33-1e6df7e52f98",
+      "key": "appDescription",
+      "value": "Portal Akses Aplikasi"
+    },
+    {
+      "id": "cb2556d7-bd6a-4f1b-91bc-81ff04b7fea6",
+      "key": "copyrightText",
+      "value": "© 2026 AppHub — AIS Ciangsana"
+    },
+    {
+      "id": "e4ba8257-0ff6-4b6d-abd9-aba485b00374",
+      "key": "SITE_NAME",
+      "value": "Galeri Aplikasi AIS"
+    },
+    {
+      "id": "b8f557e0-ded8-4231-af68-a92110a33888",
+      "key": "SITE_LOGO_URL",
+      "value": "/uploads/logo-1779456876293.png"
+    },
+    {
+      "id": "19b39a27-bbf5-4e7b-b951-415af478d2c1",
+      "key": "HERO_TAGLINE",
+      "value": "Showcase Aplikasi AN NAHL"
+    },
+    {
+      "id": "f5b1de79-ab61-431d-8085-b5e2a4b377e6",
+      "key": "HERO_DESCRIPTION",
+      "value": "Jelajahi inovasi digital kami. Portal satu pintu untuk melihat fitur dan demo semua aplikasi dalam ekosistem AIS."
+    }
+  ],
+  "showcaseApps": [
+    {
+      "id": "cmpetpmnj000i5dpmnwr1re4m",
+      "name": "Sistem Manajemen Aset",
+      "slug": "ais-fms",
+      "description": "Sistem manajemen aset sekolah lengkap dengan data aset di tiap-tiap ruangan, menejemen pengecekan gedung, maintenance sarana dan prasarana yang terintegrasi dengan sistem layanan umum.",
+      "tagline": "Inventarisasi akurat untuk mempersiapkan generasi hebat.",
+      "category": "Layanan Umum",
+      "appUrl": "https://ais-fms.ametriyadhi.com",
+      "defaultDevice": "tablet",
+      "cardBg": "gradient-blue",
+      "isPublished": true,
+      "sortOrder": 0,
+      "createdAt": "2026-05-21T01:39:59.422Z",
+      "updatedAt": "2026-05-22T04:41:51.248Z"
+    },
+    {
+      "id": "cmphjeum0001hgt6wsyp9faaj",
+      "name": "Calibre Ebook Automated",
+      "slug": "ais-ebook",
+      "description": "Aplikasi open source untuk digitalisasi perpustakaan sekolah, upload ebook dengan mudah dan langsung dapat diakses oleh guru dan siswa\r\n\r\nuser : guru\r\npass : Annahl123*",
+      "tagline": "Mendigitalkan Literasi Sekolah Secara Otomatis dan Cerdas",
+      "category": "Guru",
+      "appUrl": "https://ebook.ametriyadhi.com",
+      "defaultDevice": "tablet",
+      "cardBg": "gradient-blue",
+      "isPublished": true,
+      "sortOrder": 0,
+      "createdAt": "2026-05-22T23:14:58.914Z",
+      "updatedAt": "2026-05-22T23:41:51.879Z"
+    },
+    {
+      "id": "cmpfco9gt000x5dpmdbgj06hb",
+      "name": "Asisten Guru",
+      "slug": "Eduasisten",
+      "description": "Aplikasi Aİ asisten untuk membantu guru dalam membuat administrasi penbelajaran",
+      "tagline": "Asisten Guru AI Kontekstual & Otomatisasi Administrasi",
+      "category": "Guru",
+      "appUrl": "https://eduasisten.ametriyadhi.com",
+      "defaultDevice": "phone",
+      "cardBg": "gradient-emerald",
+      "isPublished": true,
+      "sortOrder": 0,
+      "createdAt": "2026-05-21T10:30:48.556Z",
+      "updatedAt": "2026-05-22T14:01:13.280Z"
+    },
+    {
+      "id": "cmpe62mme0000lk881d2iwurk",
+      "name": "Layanan Umum AIS",
+      "slug": "ais-umum",
+      "description": "Aplikasi layanan Umum An Nahl Islamic Scool mulai dari perbaikan, pengadaan, penggunaan fasilitas dan lainnya",
+      "tagline": "Melayani dengan hati",
+      "category": "Layanan Umum",
+      "appUrl": "https://ais-umum.ametriyadhi.com",
+      "defaultDevice": "composition",
+      "cardBg": "gradient-blue",
+      "isPublished": true,
+      "sortOrder": 0,
+      "createdAt": "2026-05-20T14:38:15.180Z",
+      "updatedAt": "2026-05-22T14:10:12.367Z"
+    },
+    {
+      "id": "cmpgzuo940000gt6wbxwwp8ql",
+      "name": "Generate Modul Ajar",
+      "slug": "edugenius",
+      "description": "Aplikasi Generator Modul Ajar yang sudah disesuaikan dengan template modul ajar SMP dan SMA An Nahl",
+      "tagline": "Generate Modul Sesuai Template",
+      "category": "Guru",
+      "appUrl": "https://rrpgenerator.ametroyadhi.com",
+      "defaultDevice": "browser",
+      "cardBg": "gradient-blue",
+      "isPublished": true,
+      "sortOrder": 0,
+      "createdAt": "2026-05-22T14:07:24.999Z",
+      "updatedAt": "2026-05-22T14:13:14.775Z"
+    },
+    {
+      "id": "cmpgft0b2002e5dpm4rn9v5u7",
+      "name": "Sistem Security",
+      "slug": "ais-ceurity",
+      "description": "Aplikasi pemantauan kemanan sekolah yang lengkap dan terintegrasi dengan sistem layanan umum sekolah",
+      "tagline": "Keamanan Real-Time dalam Satu Genggaman",
+      "category": "Layanan Umum",
+      "appUrl": "https://ais-security.ametriyadhi.com",
+      "defaultDevice": "laptop",
+      "cardBg": "gradient-purple",
+      "isPublished": true,
+      "sortOrder": 0,
+      "createdAt": "2026-05-22T04:46:14.990Z",
+      "updatedAt": "2026-05-22T14:26:23.069Z"
+    },
+    {
+      "id": "cmphgos4f000jgt6ww8w0vp2h",
+      "name": "Modul Paperless",
+      "slug": "annahlpaperless",
+      "description": "Aplikasi ",
+      "tagline": "Aplikasi penyimpanan modul dan materi ajar digital dengan fitur tag, OCR dan lainnya",
+      "category": "Guru",
+      "appUrl": "http://103.133.68.37:6876/documents",
+      "defaultDevice": "tablet",
+      "cardBg": "gradient-blue",
+      "isPublished": true,
+      "sortOrder": 0,
+      "createdAt": "2026-05-22T21:58:43.414Z",
+      "updatedAt": "2026-05-22T22:18:57.341Z"
+    },
+    {
+      "id": "cmphhy5k60010gt6w686bpkh4",
+      "name": "E-Absensi QRCode SMA",
+      "slug": "ebansensi-annahl",
+      "description": "Sistem Absensi untuk siswa SMA An Nahl Islamic School yang dilengkapi dengan fitur generate QRCode, Scanner Abensi dan laporan data absensi siswa",
+      "tagline": "QRCode Absensi SMA An Nahl",
+      "category": "Guru",
+      "appUrl": "https://script.google.com/a/macros/annahl-islamic.sch.id/s/AKfycbzejNq5V1IZbb0maGUJHI406wNjr5mCVu5rTOD1bgVeip8l1fJorYn5Q-d5ONu9cHVs/exec",
+      "defaultDevice": "tablet",
+      "cardBg": "gradient-blue",
+      "isPublished": true,
+      "sortOrder": 0,
+      "createdAt": "2026-05-22T22:34:00.486Z",
+      "updatedAt": "2026-05-22T22:40:59.070Z"
+    }
+  ],
+  "showcaseMedias": [
+    {
+      "id": "cmpe75tqw0001as6eyijdpczo",
+      "appId": "cmpe62mme0000lk881d2iwurk",
+      "type": "screenshot",
+      "url": "/uploads/1779289724106-423968429.png",
+      "thumbnail": null,
+      "caption": "Halaman login dark mode",
+      "mockup": "phone",
+      "order": 0
+    },
+    {
+      "id": "cmpe76lm70003as6es6eqpndn",
+      "appId": "cmpe62mme0000lk881d2iwurk",
+      "type": "screenshot",
+      "url": "/uploads/1779289760082-711898366.png",
+      "thumbnail": null,
+      "caption": "Halaman login light mode",
+      "mockup": "phone",
+      "order": 0
+    },
+    {
+      "id": "cmpe77k7l0005as6ed13m2r3l",
+      "appId": "cmpe62mme0000lk881d2iwurk",
+      "type": "screenshot",
+      "url": "/uploads/1779289805062-291815229.png",
+      "thumbnail": null,
+      "caption": "Menu aplikasi mobile",
+      "mockup": "phone",
+      "order": 0
+    },
+    {
+      "id": "cmpe78fco0007as6eze2qj7hu",
+      "appId": "cmpe62mme0000lk881d2iwurk",
+      "type": "screenshot",
+      "url": "/uploads/1779289845423-828386803.png",
+      "thumbnail": null,
+      "caption": "Detail permintaan perbaikan",
+      "mockup": "phone",
+      "order": 0
+    },
+    {
+      "id": "cmperbp1f000fas6e9bkh3nr6",
+      "appId": "cmpe62mme0000lk881d2iwurk",
+      "type": "screenshot",
+      "url": "/uploads/1779323590268-326883345.png",
+      "thumbnail": null,
+      "caption": "Dashboard Layanan Umum",
+      "mockup": "tablet",
+      "order": 0
+    },
+    {
+      "id": "cmperz1ac000has6ezva88a7x",
+      "appId": "cmpe62mme0000lk881d2iwurk",
+      "type": "screenshot",
+      "url": "/uploads/1779324679158-228640219.JPG",
+      "thumbnail": null,
+      "caption": "Fitur detail laporan",
+      "mockup": "laptop",
+      "order": 0
+    },
+    {
+      "id": "cmpesd7mt00015dpmaebomdlr",
+      "appId": "cmpe62mme0000lk881d2iwurk",
+      "type": "video",
+      "url": "/uploads/1779325339907-886200525.mp4",
+      "thumbnail": null,
+      "caption": "Menu dan Fitur Layanan Umum",
+      "mockup": "tablet",
+      "order": 0
+    },
+    {
+      "id": "cmpfc25a0000m5dpmlrx8e0n7",
+      "appId": "cmpetpmnj000i5dpmnwr1re4m",
+      "type": "screenshot",
+      "url": "/uploads/1779358416685-644779706.png",
+      "thumbnail": null,
+      "caption": "Menu aplikasi AİS-FMS",
+      "mockup": "phone",
+      "order": 0
+    },
+    {
+      "id": "cmpfc2prq000o5dpmfeeim292",
+      "appId": "cmpetpmnj000i5dpmnwr1re4m",
+      "type": "screenshot",
+      "url": "/uploads/1779358443244-306494647.png",
+      "thumbnail": null,
+      "caption": "Menu Aset Reigtry",
+      "mockup": "phone",
+      "order": 0
+    },
+    {
+      "id": "cmpfc407k000s5dpmmskaeccx",
+      "appId": "cmpetpmnj000i5dpmnwr1re4m",
+      "type": "screenshot",
+      "url": "/uploads/1779358503318-794984243.png",
+      "thumbnail": null,
+      "caption": "Menu Akses cepat ",
+      "mockup": "phone",
+      "order": 0
+    },
+    {
+      "id": "cmpfc4sfc000u5dpmfm042kgp",
+      "appId": "cmpetpmnj000i5dpmnwr1re4m",
+      "type": "screenshot",
+      "url": "/uploads/1779358539998-567573541.png",
+      "thumbnail": null,
+      "caption": "Menu Fasilitas Ruangan",
+      "mockup": "phone",
+      "order": 0
+    },
+    {
+      "id": "cmpfc5t9h000w5dpm1pa7nv3d",
+      "appId": "cmpetpmnj000i5dpmnwr1re4m",
+      "type": "screenshot",
+      "url": "/uploads/1779358587735-916742765.png",
+      "thumbnail": null,
+      "caption": "Menu Maintenance Kendaraan",
+      "mockup": "phone",
+      "order": 0
+    },
+    {
+      "id": "cmpfdqhcx00195dpmj16fbtsv",
+      "appId": "cmpfco9gt000x5dpmdbgj06hb",
+      "type": "youtube",
+      "url": "https://youtube.com/embed/VOg7xC4h-ck?si=TZbrn7mmxGwdiKfy",
+      "thumbnail": null,
+      "caption": "",
+      "mockup": "phone",
+      "order": 0
+    },
+    {
+      "id": "cmpfig289001p5dpmhk5qasm4",
+      "appId": "cmpfco9gt000x5dpmdbgj06hb",
+      "type": "youtube",
+      "url": "https://www.youtube.com/embed/Ri4UZY0ge9c?",
+      "thumbnail": null,
+      "caption": "Menu Eduasisten",
+      "mockup": "tablet",
+      "order": 0
+    },
+    {
+      "id": "cmpfilhrq001r5dpmc3aiaq2j",
+      "appId": "cmpfco9gt000x5dpmdbgj06hb",
+      "type": "screenshot",
+      "url": "/uploads/1779369397033-198749270.png",
+      "thumbnail": null,
+      "caption": "Menu aplikasi Asisten Guru",
+      "mockup": "tablet",
+      "order": 0
+    },
+    {
+      "id": "cmpfioryb001v5dpm61zomxj6",
+      "appId": "cmpfco9gt000x5dpmdbgj06hb",
+      "type": "screenshot",
+      "url": "/uploads/1779369550200-8783195.png",
+      "thumbnail": null,
+      "caption": "Menu aplikasi Asisten Guru",
+      "mockup": "laptop",
+      "order": 0
+    },
+    {
+      "id": "cmpfiudht001x5dpmmtoyccxz",
+      "appId": "cmpetpmnj000i5dpmnwr1re4m",
+      "type": "screenshot",
+      "url": "/uploads/1779369811280-337870912.png",
+      "thumbnail": null,
+      "caption": "Dashboard AIS-FMS",
+      "mockup": "tablet",
+      "order": 0
+    },
+    {
+      "id": "cmpfivdiu001z5dpmlu7ifrj9",
+      "appId": "cmpetpmnj000i5dpmnwr1re4m",
+      "type": "screenshot",
+      "url": "/uploads/1779369858092-774158308.png",
+      "thumbnail": null,
+      "caption": "Maintenance Kendaraan",
+      "mockup": "laptop",
+      "order": 0
+    },
+    {
+      "id": "cmpfiyfbj00215dpmgpd28h0k",
+      "appId": "cmpetpmnj000i5dpmnwr1re4m",
+      "type": "screenshot",
+      "url": "/uploads/1779370000389-977603127.jpeg",
+      "thumbnail": null,
+      "caption": "Data Gedung",
+      "mockup": "browser",
+      "order": 0
+    },
+    {
+      "id": "cmpghzz70002g5dpmen6lsgfx",
+      "appId": "cmpgft0b2002e5dpm4rn9v5u7",
+      "type": "screenshot",
+      "url": "/uploads/1779428859358-164316426.png",
+      "thumbnail": null,
+      "caption": "Dashboard AIS-Security",
+      "mockup": "tablet",
+      "order": 0
+    },
+    {
+      "id": "cmpgmlznx002i5dpmyh49gvs2",
+      "appId": "cmpgft0b2002e5dpm4rn9v5u7",
+      "type": "screenshot",
+      "url": "/uploads/1779436604863-275392245.JPG",
+      "thumbnail": null,
+      "caption": "Menu Setting DVR",
+      "mockup": "laptop",
+      "order": 0
+    },
+    {
+      "id": "cmpgmmj73002k5dpmb211re6t",
+      "appId": "cmpgft0b2002e5dpm4rn9v5u7",
+      "type": "screenshot",
+      "url": "/uploads/1779436630181-453579676.JPG",
+      "thumbnail": null,
+      "caption": "Menu Monitor CCTV",
+      "mockup": "laptop",
+      "order": 0
+    },
+    {
+      "id": "cmpguzu4s002w5dpmcqsdcec4",
+      "appId": "cmpfco9gt000x5dpmdbgj06hb",
+      "type": "screenshot",
+      "url": "/uploads/1779450687782-447137912.jpg",
+      "thumbnail": null,
+      "caption": "AI Asisten",
+      "mockup": "phone",
+      "order": 0
+    },
+    {
+      "id": "cmpgzx6iy0002gt6wui32mm0c",
+      "appId": "cmpgzuo940000gt6wbxwwp8ql",
+      "type": "screenshot",
+      "url": "/uploads/1779458961976-292174238.png",
+      "thumbnail": null,
+      "caption": "Menu RPP Generator",
+      "mockup": "browser",
+      "order": 0
+    },
+    {
+      "id": "cmphfnoh2000igt6wrdknoe51",
+      "appId": "cmpgft0b2002e5dpm4rn9v5u7",
+      "type": "screenshot",
+      "url": "/uploads/1779485392534-1005014.png",
+      "thumbnail": null,
+      "caption": "Mobitor CCTV",
+      "mockup": "phone",
+      "order": 0
+    },
+    {
+      "id": "cmphhl0xp000zgt6wbh1mgx3p",
+      "appId": "cmphgos4f000jgt6ww8w0vp2h",
+      "type": "screenshot",
+      "url": "/uploads/1779488627954-583704831.png",
+      "thumbnail": null,
+      "caption": "Dashboard Paperless SMA",
+      "mockup": "tablet",
+      "order": 0
+    },
+    {
+      "id": "cmphhz3be0012gt6w6h81t5ow",
+      "appId": "cmphhy5k60010gt6w686bpkh4",
+      "type": "screenshot",
+      "url": "/uploads/1779489284218-592077967.png",
+      "thumbnail": null,
+      "caption": "Login Aplikasi",
+      "mockup": "tablet",
+      "order": 0
+    },
+    {
+      "id": "cmphhzqnj0014gt6wwpsr4d2f",
+      "appId": "cmphhy5k60010gt6w686bpkh4",
+      "type": "screenshot",
+      "url": "/uploads/1779489314470-707895022.png",
+      "thumbnail": null,
+      "caption": "Halaman Dashboard",
+      "mockup": "tablet",
+      "order": 0
+    },
+    {
+      "id": "cmphi0bir0016gt6wtfxmhhew",
+      "appId": "cmphhy5k60010gt6w686bpkh4",
+      "type": "screenshot",
+      "url": "/uploads/1779489341372-499706789.png",
+      "thumbnail": null,
+      "caption": "QRCode Siswa",
+      "mockup": "tablet",
+      "order": 0
+    },
+    {
+      "id": "cmphi0tvm0018gt6wgqh21563",
+      "appId": "cmphhy5k60010gt6w686bpkh4",
+      "type": "screenshot",
+      "url": "/uploads/1779489365305-816052091.png",
+      "thumbnail": null,
+      "caption": "Laporan Absensi",
+      "mockup": "tablet",
+      "order": 0
+    },
+    {
+      "id": "cmphjxqxk001jgt6w7azk762s",
+      "appId": "cmphjeum0001hgt6wsyp9faaj",
+      "type": "screenshot",
+      "url": "/uploads/1779492580745-411061737.png",
+      "thumbnail": null,
+      "caption": "Dashboard Ebook",
+      "mockup": "tablet",
+      "order": 0
+    },
+    {
+      "id": "cmphjy8sb001lgt6wcho6mpwq",
+      "appId": "cmphjeum0001hgt6wsyp9faaj",
+      "type": "screenshot",
+      "url": "/uploads/1779492603880-433990936.png",
+      "thumbnail": null,
+      "caption": "Author Ebook ",
+      "mockup": "tablet",
+      "order": 0
+    },
+    {
+      "id": "cmphkq0ca001ngt6wrizgerom",
+      "appId": "cmphhy5k60010gt6w686bpkh4",
+      "type": "screenshot",
+      "url": "/uploads/1779493899309-565339874.png",
+      "thumbnail": null,
+      "caption": "Dashborad siswa",
+      "mockup": "phone",
+      "order": 0
+    },
+    {
+      "id": "cmphkqics001pgt6wliylrgzy",
+      "appId": "cmphhy5k60010gt6w686bpkh4",
+      "type": "screenshot",
+      "url": "/uploads/1779493922659-440631099.png",
+      "thumbnail": null,
+      "caption": "Rekap Absen siswa",
+      "mockup": "phone",
+      "order": 0
+    }
+  ],
+  "showcaseFeatures": [
+    {
+      "id": "cmpet77hl00055dpmex7g67zm",
+      "appId": "cmpe62mme0000lk881d2iwurk",
+      "icon": "✨",
+      "title": "Perbaikan",
+      "desc": "Permintaan perbaikan sarana & Prasarana",
+      "order": 0
+    },
+    {
+      "id": "cmpet7r8o00075dpm8ojky24h",
+      "appId": "cmpe62mme0000lk881d2iwurk",
+      "icon": "✨",
+      "title": "Pengadaan",
+      "desc": "Permintaan pengadaan barang & jasa",
+      "order": 0
+    },
+    {
+      "id": "cmpet8zku00095dpm8n9yg91k",
+      "appId": "cmpe62mme0000lk881d2iwurk",
+      "icon": "✨",
+      "title": "Peminjaman Barang",
+      "desc": "Peminjaman barang, serah terima dan laporan",
+      "order": 0
+    },
+    {
+      "id": "cmpetazr4000b5dpmpj9bxg48",
+      "appId": "cmpe62mme0000lk881d2iwurk",
+      "icon": "✨",
+      "title": "Pemakaian Barang Habis Pakai",
+      "desc": "Pembelian, Penggunaan dan stock opname",
+      "order": 0
+    },
+    {
+      "id": "cmpetc41l000d5dpm3fwwln69",
+      "appId": "cmpe62mme0000lk881d2iwurk",
+      "icon": "✨",
+      "title": "Kalender fasilitas umum",
+      "desc": "Kalender penggunaan fasilitas umum",
+      "order": 0
+    },
+    {
+      "id": "cmpetdlm5000f5dpm2h8y9k8k",
+      "appId": "cmpe62mme0000lk881d2iwurk",
+      "icon": "✨",
+      "title": "Manajemen Proyek",
+      "desc": "Rab, progress laporan dan dokumentasi proyek",
+      "order": 0
+    },
+    {
+      "id": "cmpetf9h6000h5dpm5v6z105p",
+      "appId": "cmpe62mme0000lk881d2iwurk",
+      "icon": "✨",
+      "title": "laporan realtime",
+      "desc": "Laporan realtime terintegrasi dengan email sekolah",
+      "order": 0
+    },
+    {
+      "id": "cmpfcq2m2000z5dpmoc5drcg4",
+      "appId": "cmpfco9gt000x5dpmdbgj06hb",
+      "icon": "✨",
+      "title": "Generator ATP",
+      "desc": "Membuat Administrasi ATP CP sesuai dengan fase dan jenjang pendidikan",
+      "order": 0
+    },
+    {
+      "id": "cmpfcrikq00115dpmzve5dyrw",
+      "appId": "cmpfco9gt000x5dpmdbgj06hb",
+      "icon": "✨",
+      "title": "Generator Prota & Prosem",
+      "desc": "Membuat Administrasi Program Tahunan & Semester",
+      "order": 0
+    },
+    {
+      "id": "cmpgefqzl00235dpmw77x5ih5",
+      "appId": "cmpetpmnj000i5dpmnwr1re4m",
+      "icon": "✨",
+      "title": "Manajemen Lokasi",
+      "desc": "Database Lokasi, Gedung, Lantai dan Ruangan.",
+      "order": 0
+    },
+    {
+      "id": "cmpgegnzk00255dpmu98suimi",
+      "appId": "cmpetpmnj000i5dpmnwr1re4m",
+      "icon": "✨",
+      "title": "Registry Aset",
+      "desc": "Database Aset sesuai dengan kategori di semua gedung dan ruangan sekolah",
+      "order": 0
+    },
+    {
+      "id": "cmpget79100275dpm8mw1lh6c",
+      "appId": "cmpetpmnj000i5dpmnwr1re4m",
+      "icon": "✨",
+      "title": "Inspeksi Gedung",
+      "desc": "Checklist inspeksi gedung, lantai ruang dan kondisi sarana dan prasarana",
+      "order": 0
+    },
+    {
+      "id": "cmpgev1nn00295dpmyl01q97t",
+      "appId": "cmpetpmnj000i5dpmnwr1re4m",
+      "icon": "✨",
+      "title": "Maintenance Kendaraan",
+      "desc": "Data kendaraan, pencatatan service dan perkiraan service selanjutnya",
+      "order": 0
+    },
+    {
+      "id": "cmpgewezz002b5dpm9phczde1",
+      "appId": "cmpetpmnj000i5dpmnwr1re4m",
+      "icon": "✨",
+      "title": "Maintenance Kolam",
+      "desc": "Pencataan maintenance kolam dan kalendar jadwal pemakain dan maintenance kolam",
+      "order": 0
+    },
+    {
+      "id": "cmpgeygz0002d5dpmzk00dg5x",
+      "appId": "cmpetpmnj000i5dpmnwr1re4m",
+      "icon": "✨",
+      "title": "Sistem standby OB",
+      "desc": "Sistem pencatatan stanbay Office Boy",
+      "order": 0
+    },
+    {
+      "id": "cmpgmvkjo002m5dpmnyk6lf37",
+      "appId": "cmpgft0b2002e5dpm4rn9v5u7",
+      "icon": "✨",
+      "title": "Buku Tamu",
+      "desc": "Buku tamu digital lengkap dengan fitur photo tamu/tanda pengenal",
+      "order": 0
+    },
+    {
+      "id": "cmpgmz8sk002o5dpmvlqjxxtd",
+      "appId": "cmpgft0b2002e5dpm4rn9v5u7",
+      "icon": "✨",
+      "title": "QRCode Patroli Security",
+      "desc": "QRCode POS Patroli keamanan agar security memantau semua area",
+      "order": 0
+    },
+    {
+      "id": "cmpgn4dw5002q5dpm6f21uz04",
+      "appId": "cmpgft0b2002e5dpm4rn9v5u7",
+      "icon": "✨",
+      "title": "Lapor Insiden ",
+      "desc": "Laporan insiden di area sekolah untuk penanggulangan lebih lanjut",
+      "order": 0
+    },
+    {
+      "id": "cmpgn5wjz002s5dpm87go2cxe",
+      "appId": "cmpgft0b2002e5dpm4rn9v5u7",
+      "icon": "✨",
+      "title": "Monitor CCTV",
+      "desc": "Monitor CCTV live stream untuk memastikan area aman dan terkendali",
+      "order": 0
+    },
+    {
+      "id": "cmpgng3kq002u5dpmipcfsost",
+      "appId": "cmpgft0b2002e5dpm4rn9v5u7",
+      "icon": "✨",
+      "title": "Manajemen Roaster",
+      "desc": "Penjadwalan otomatis dari gambar jadwal jaga",
+      "order": 0
+    },
+    {
+      "id": "cmpgwe5cl0001cgewn1ocf4p1",
+      "appId": "cmpfco9gt000x5dpmdbgj06hb",
+      "icon": "✨",
+      "title": "Generator Modul Ajar",
+      "desc": "Membuat modul ajar sesuai parameter yang dipilih pada jenjang dan mata pelajaran",
+      "order": 0
+    },
+    {
+      "id": "cmph0mefk0004gt6wbcb29ono",
+      "appId": "cmpgzuo940000gt6wbxwwp8ql",
+      "icon": "✨",
+      "title": "Generate Modul SMP",
+      "desc": "Membuat modul ajar sesuai template unit SMP",
+      "order": 0
+    },
+    {
+      "id": "cmph0mn6y0006gt6wqzkfe1u5",
+      "appId": "cmpgzuo940000gt6wbxwwp8ql",
+      "icon": "✨",
+      "title": "Generate Modul SMA",
+      "desc": "Membuat modul ajar sesuai template unit SMA",
+      "order": 0
+    },
+    {
+      "id": "cmph0qxsw000cgt6w6d5auifg",
+      "appId": "cmpfco9gt000x5dpmdbgj06hb",
+      "icon": "✨",
+      "title": "Genrator Materi/Bahan Ajar",
+      "desc": "Membuat materi/ bahan ajar sesuai dengan pilihan parameter metode",
+      "order": 0
+    },
+    {
+      "id": "cmph0sn4x000egt6wwxc7j041",
+      "appId": "cmpfco9gt000x5dpmdbgj06hb",
+      "icon": "✨",
+      "title": "Genrator Soal",
+      "desc": "Membuat soal dengan banyak pilihan jenis soal dan tingkat kesulitan yang lengkap dengan kisi-kisi",
+      "order": 0
+    },
+    {
+      "id": "cmph0ujcc000ggt6wv96wyr0i",
+      "appId": "cmpfco9gt000x5dpmdbgj06hb",
+      "icon": "✨",
+      "title": "Genrator Prompt",
+      "desc": "Membuat prompt berbasis PRD untuk media balajr interaktif atau gamifikasi yang dapat digunakan di Canva AI atau Gemini",
+      "order": 0
+    },
+    {
+      "id": "cmphguxqi000ngt6w3fhcs26f",
+      "appId": "cmphgos4f000jgt6ww8w0vp2h",
+      "icon": "✨",
+      "title": "Indeks Dokumen",
+      "desc": "Atur dan indeks dokumen yang dipindai dengan tag, koresponden, jenis, dan lainnya",
+      "order": 0
+    },
+    {
+      "id": "cmphgw0fy000pgt6ww7cjz21c",
+      "appId": "cmphgos4f000jgt6ww8w0vp2h",
+      "icon": "✨",
+      "title": "Penyimpanan Lokal",
+      "desc": "Data Anda disimpan secara lokal di server Anda dan tidak pernah dikirimkan atau dibagikan dengan cara apa pun",
+      "order": 0
+    },
+    {
+      "id": "cmphgwzvj000rgt6wxlvzkjbe",
+      "appId": "cmphgos4f000jgt6ww8w0vp2h",
+      "icon": "✨",
+      "title": "Pemindaian OCR",
+      "desc": "Melakukan OCR pada dokumen Anda, menambahkan teks yang dapat dicari dan dipilih, bahkan ke dokumen yang dipindai hanya dengan gambar",
+      "order": 0
+    },
+    {
+      "id": "cmphgzitk000tgt6w0ithuits",
+      "appId": "cmphgos4f000jgt6ww8w0vp2h",
+      "icon": "✨",
+      "title": "Mendukung banyak jenis dokuemen",
+      "desc": "Mendukung dokumen PDF, gambar, file teks biasa, dokumen Office (Word, Excel, PowerPoint, dan setara LibreOffice)[^1] dan banyak lagi.",
+      "order": 0
+    },
+    {
+      "id": "cmphi29ld001agt6w8j9gydss",
+      "appId": "cmphhy5k60010gt6w686bpkh4",
+      "icon": "✨",
+      "title": "Multi User",
+      "desc": "Aplikasi mendukung multi user (Admin, Guru dan Siswa)",
+      "order": 0
+    },
+    {
+      "id": "cmphi3opm001cgt6wexvsulx6",
+      "appId": "cmphhy5k60010gt6w686bpkh4",
+      "icon": "✨",
+      "title": "Generate QRCode ",
+      "desc": "QRCode langsung tergenerate otomatis dari database siswa",
+      "order": 0
+    },
+    {
+      "id": "cmphi4ulu001egt6wbk43uazs",
+      "appId": "cmphhy5k60010gt6w686bpkh4",
+      "icon": "✨",
+      "title": "Scanner QRCode ",
+      "desc": "Akses cepat ke scanner memudahkan guru piket untuk scan QRCode siswa",
+      "order": 0
+    },
+    {
+      "id": "cmphi69ph001ggt6wozcszb7l",
+      "appId": "cmphhy5k60010gt6w686bpkh4",
+      "icon": "✨",
+      "title": "Laporan Absensi",
+      "desc": "Menu laporan absensi lengkap dengan fitur filter dan export file excel",
+      "order": 0
+    }
+  ]
+}
