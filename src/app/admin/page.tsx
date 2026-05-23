@@ -2,6 +2,32 @@ import { prisma } from "@/lib/db";
 import Link from "next/link";
 
 export default async function AdminDashboard() {
+  // AUTO-SYNC LOGIC: Find AppHub applications that are not yet in Showcase
+  const unsyncedApps = await prisma.application.findMany({
+    where: { showcaseApp: null },
+    include: { category: true }
+  });
+
+  if (unsyncedApps.length > 0) {
+    for (const app of unsyncedApps) {
+      // Create a slug from app name
+      const baseSlug = app.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)+/g, "");
+      const uniqueSuffix = Math.random().toString(36).substring(2, 6);
+      
+      await prisma.showcaseApp.create({
+        data: {
+          apphubId: app.id,
+          name: app.name,
+          slug: `${baseSlug}-${uniqueSuffix}`,
+          description: app.description,
+          category: app.category?.name || "General",
+          appUrl: app.url,
+          isPublished: false, // Create as Draft
+        }
+      });
+    }
+  }
+
   const showcases = await prisma.showcaseApp.findMany({
     orderBy: { sortOrder: "asc" },
   });

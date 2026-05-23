@@ -53,6 +53,7 @@ model Application {
   favorites     UserFavorite[]
   clickLogs     AppClickLog[]
   appRoles      ApplicationRole[]
+  showcaseApp   ShowcaseApp?
   createdAt     DateTime          @default(now())
   updatedAt     DateTime          @updatedAt
 }
@@ -115,6 +116,8 @@ model ShowcaseApp {
   tagline       String?
   category      String?
   appUrl        String?
+  apphubId      String?  @unique
+  apphubData    Application? @relation(fields: [apphubId], references: [id], onDelete: SetNull)
   defaultDevice String   @default("phone")
   cardBg        String   @default("gradient-blue")
   isPublished   Boolean  @default(false)
