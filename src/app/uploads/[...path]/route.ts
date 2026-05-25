@@ -13,10 +13,15 @@ export async function GET(request: Request, { params }: { params: { path: string
     try {
       fileBuffer = await fs.readFile(filePath);
     } catch (e) {
-      // If not found in showcaseapp, fallback to apphub's directory
-      // Assuming apphub is located at /var/www/apphub (or adjacent to showcaseapp)
-      const apphubPath = path.join(process.cwd(), '..', 'apphub', 'public', 'uploads', joinedPath);
-      fileBuffer = await fs.readFile(apphubPath);
+      // Try 'apphub' directory
+      try {
+        const apphubPath = path.join(process.cwd(), '..', 'apphub', 'public', 'uploads', joinedPath);
+        fileBuffer = await fs.readFile(apphubPath);
+      } catch (e2) {
+        // Try 'ais-apphub' directory
+        const aisApphubPath = path.join(process.cwd(), '..', 'ais-apphub', 'public', 'uploads', joinedPath);
+        fileBuffer = await fs.readFile(aisApphubPath);
+      }
     }
     
     const ext = path.extname(joinedPath).toLowerCase();
