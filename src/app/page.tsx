@@ -4,6 +4,8 @@ import { prisma } from "@/lib/db";
 import Link from "next/link";
 import { HomeGalleryClient } from "./home-gallery-client";
 
+import { getSystemSettings } from "@/lib/settings";
+
 export default async function Home({
   searchParams,
 }: {
@@ -19,27 +21,15 @@ export default async function Home({
     },
   });
 
-  const settingsDb = await prisma.systemSetting.findMany({
-    where: {
-      key: {
-        in: ["SITE_NAME", "SITE_LOGO_URL", "HERO_TAGLINE", "HERO_DESCRIPTION"],
-      },
-    },
-  });
+  const settings = await getSystemSettings();
+  const siteName = settings.appName || "ShowcaseApp";
+  const siteLogoUrl = settings.appLogo || "";
+  
+  // AppHub description or default if none
+  const heroDescription = settings.appDescription || "Kelola tugas, pantau progress, dan buat laporan proyek dalam satu platform — lengkap dengan kurva S dan komunikasi tim yang terhubung.";
 
-  const settings = settingsDb.reduce((acc, curr) => {
-    acc[curr.key] = curr.value;
-    return acc;
-  }, {} as Record<string, string>);
-
-  const siteName = settings["SITE_NAME"] || "ais-showcase";
-  const siteLogoUrl = settings["SITE_LOGO_URL"] || "";
-  const heroTagline = settings["HERO_TAGLINE"] || "Kerja Tim Rapi Tanpa Drama.";
-  const heroDescription =
-    settings["HERO_DESCRIPTION"] ||
-    "Kelola tugas, pantau progress, dan buat laporan proyek dalam satu platform — lengkap dengan kurva S dan komunikasi tim yang terhubung.";
-
-  // Helper for dynamic gradient tagline (colors last 2 words)
+  // Hardcode a default tagline for Showcase if no specific tagline exists in system settings
+  const heroTagline = "Pusat Aplikasi Internal Terpadu.";
   const taglineWords = heroTagline.split(" ");
   const taglineFirstPart = taglineWords.slice(0, -2).join(" ");
   const taglineGradientPart = taglineWords.slice(-2).join(" ");

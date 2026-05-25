@@ -2,6 +2,7 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import Link from "next/link";
+import { getSystemSettings } from "@/lib/settings";
 
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
   const session = await getServerSession(authOptions);
@@ -10,13 +11,22 @@ export default async function AdminLayout({ children }: { children: React.ReactN
     redirect("/login");
   }
 
+  const settings = await getSystemSettings();
+
   return (
     <div className="min-h-screen bg-slate-50 flex">
       {/* Sidebar */}
       <aside className="w-64 bg-slate-900 text-white min-h-screen p-6 hidden md:block">
-        <div className="mb-10">
-          <h2 className="text-2xl font-black bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400">
-            AIS Admin
+        <div className="mb-10 flex flex-col items-center sm:items-start text-center sm:text-left">
+          {settings.appLogo ? (
+            <img src={settings.appLogo} alt={settings.appName} className="h-12 w-auto mb-4 object-contain filter drop-shadow-md brightness-0 invert" />
+          ) : (
+            <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-3">
+              <span className="text-xl font-black text-white">{settings.appName.substring(0,3).toUpperCase()}</span>
+            </div>
+          )}
+          <h2 className="text-xl font-black text-white line-clamp-2">
+            {settings.appName}
           </h2>
           <p className="text-slate-400 text-xs font-bold uppercase tracking-wider mt-1">Showcase CMS</p>
         </div>
