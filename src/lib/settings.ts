@@ -5,6 +5,7 @@ export type SystemSettings = {
   appDescription: string;
   appLogo: string;
   copyrightText: string;
+  heroTagline: string;
 };
 
 export async function getSystemSettings(): Promise<SystemSettings> {
