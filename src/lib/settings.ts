@@ -26,7 +26,8 @@ export async function getSystemSettings(): Promise<SystemSettings> {
       appName: "ShowcaseApp",
       appDescription: "Portal Aplikasi Internal",
       appLogo: "",
-      copyrightText: "© 2026 AppHub — Internal Use Only",
+      copyrightText: "© 2026 ShowcaseApp — Internal Use Only",
+      heroTagline: "Pusat Aplikasi Internal",
     };
   }
 }
