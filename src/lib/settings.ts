@@ -12,13 +12,12 @@ export async function getSystemSettings(): Promise<SystemSettings> {
     const settings = await prisma.systemSetting.findMany();
     const map = new Map(settings.map((s) => [s.key, s.value]));
     
-    let appLogo = map.get("appLogo") || "";
-
     return {
-      appName: map.get("appName") || "ShowcaseApp",
-      appDescription: map.get("appDescription") || "Portal Aplikasi Internal",
-      appLogo,
-      copyrightText: map.get("copyrightText") || "© 2026 AppHub — Internal Use Only",
+      appName: map.get("SITE_NAME") || "ShowcaseApp",
+      appDescription: map.get("HERO_DESCRIPTION") || "Portal Aplikasi Internal",
+      appLogo: map.get("SITE_LOGO_URL") || "",
+      copyrightText: "© 2026 ShowcaseApp — Internal Use Only",
+      heroTagline: map.get("HERO_TAGLINE") || "Pusat Aplikasi Internal",
     };
   } catch (err) {
     console.error("Failed to fetch system settings, using defaults:", err);

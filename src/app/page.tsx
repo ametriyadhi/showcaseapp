@@ -29,7 +29,7 @@ export default async function Home({
   const heroDescription = settings.appDescription || "Kelola tugas, pantau progress, dan buat laporan proyek dalam satu platform — lengkap dengan kurva S dan komunikasi tim yang terhubung.";
 
   // Hardcode a default tagline for Showcase if no specific tagline exists in system settings
-  const heroTagline = "Pusat Aplikasi Internal Terpadu.";
+  const heroTagline = settings.heroTagline || "Pusat Aplikasi Internal Terpadu.";
   const taglineWords = heroTagline.split(" ");
   const taglineFirstPart = taglineWords.slice(0, -2).join(" ");
   const taglineGradientPart = taglineWords.slice(-2).join(" ");
