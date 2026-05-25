@@ -27,6 +27,9 @@ export default async function AdminLayout({ children }: { children: React.ReactN
           <Link href="/admin/settings" className="block px-4 py-2.5 rounded-lg hover:bg-white/5 font-medium text-slate-300">
             Pengaturan
           </Link>
+          <Link href="/admin/users" className="block px-4 py-2.5 rounded-lg hover:bg-white/5 font-medium text-slate-300">
+            Kelola User 👥
+          </Link>
           <a href={process.env.NEXT_PUBLIC_APPHUB_URL || "https://ais-apphub.ametriyadhi.com"} className="block px-4 py-2.5 rounded-lg hover:bg-white/5 font-medium text-blue-400 mt-4 border border-blue-500/30">
             Kembali ke AppHub ↗
           </a>
